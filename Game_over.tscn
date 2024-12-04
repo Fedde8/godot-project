@@ -1,0 +1,69 @@
+[gd_scene load_steps=8 format=3 uid="uid://cpdpdnlgadayo"]
+
+[ext_resource type="Script" path="res://GameoverscreenCONTROL.gd" id="1_6y0el"]
+[ext_resource type="Texture2D" uid="uid://lb1waw1mybvn" path="res://gameover.jpg" id="1_k0doe"]
+[ext_resource type="SystemFont" uid="uid://dge2vktlvbqib" path="res://new_system_font.tres" id="2_obk66"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s1h2y"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gur8c"]
+bg_color = Color(0.197937, 0.197937, 0.197937, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_is2be"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cbkdp"]
+texture = ExtResource("1_k0doe")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 918.0
+offset_top = 829.0
+offset_right = 958.0
+offset_bottom = 869.0
+script = ExtResource("1_6y0el")
+
+[node name="exit" type="Button" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = 841.0
+offset_top = 870.0
+offset_right = 1108.0
+offset_bottom = 947.0
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxFlat_s1h2y")
+theme_override_styles/hover = SubResource("StyleBoxFlat_gur8c")
+theme_override_styles/normal = SubResource("StyleBoxFlat_is2be")
+text = "EXIT GAME"
+
+[node name="background" type="Label" parent="."]
+offset_right = 1989.0
+offset_bottom = 1092.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_cbkdp")
+metadata/_edit_lock_ = true
+
+[node name="Game over" type="Label" parent="."]
+offset_left = 526.0
+offset_top = 223.0
+offset_right = 1404.0
+offset_bottom = 486.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_obk66")
+theme_override_font_sizes/font_size = 200
+text = "GAME OVER"
+
+[node name="You lost" type="Label" parent="."]
+offset_left = 788.0
+offset_top = 430.0
+offset_right = 1666.0
+offset_bottom = 693.0
+theme_override_colors/font_color = Color(0.719, 0.001, 0, 0.93)
+theme_override_fonts/font = ExtResource("2_obk66")
+theme_override_font_sizes/font_size = 100
+text = "YOU LOST"
+
+[connection signal="pressed" from="Control/exit" to="Control" method="_on_exit_pressed"]

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsrfxbbdd7wml"]
+
+[ext_resource type="Texture2D" uid="uid://bsby3yu3vhfmt" path="res://Farm Informatica.png" id="1_pwqxy"]
+
+[node name="house_b" type="Sprite2D"]
+position = Vector2(98, 62)
+scale = Vector2(0.5, 0.433333)
+texture = ExtResource("1_pwqxy")

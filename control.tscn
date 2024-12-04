@@ -1,0 +1,206 @@
+[gd_scene load_steps=15 format=3 uid="uid://s7o6sprei1dx"]
+
+[ext_resource type="SystemFont" uid="uid://dge2vktlvbqib" path="res://new_system_font.tres" id="1_bgoh4"]
+[ext_resource type="Script" path="res://ControlsEXIT.gd" id="1_m71ga"]
+[ext_resource type="Texture2D" uid="uid://dpvwk3os7ikji" path="res://image-removebg-preview (2).png" id="2_8sbpr"]
+[ext_resource type="Texture2D" uid="uid://bqyepj06xxfr1" path="res://= key.png" id="3_2f5es"]
+[ext_resource type="Texture2D" uid="uid://dq50msuu44lux" path="res://- key.png" id="4_iwkia"]
+[ext_resource type="Texture2D" uid="uid://vgepb13vqsg3" path="res://image-removebg-preview (5).png" id="6_lrgd5"]
+[ext_resource type="Texture2D" uid="uid://dnm0wk2mcdnwx" path="res://image-removebg-preview.png" id="7_oa6aj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xnxi5"]
+bg_color = Color(0.158832, 0.371628, 0.191572, 1)
+shadow_color = Color(0.00184107, 0.00184107, 0.00184107, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uu3ww"]
+texture = ExtResource("3_2f5es")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_12ap4"]
+texture = ExtResource("4_iwkia")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sdio4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_om8gm"]
+bg_color = Color(1, 0.333333, 0.290196, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d3kd7"]
+bg_color = Color(1, 0.333, 0.289, 0.999)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5hu7o"]
+bg_color = Color(0.913725, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 10
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m71ga")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 805.0
+offset_bottom = 428.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_bgoh4")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_xnxi5")
+text = "              Controls                                                                             Tutorial"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 81.7504
+offset_top = 258.125
+offset_right = 437.75
+offset_bottom = 572.125
+theme_override_fonts/font = ExtResource("1_bgoh4")
+theme_override_font_sizes/font_size = 50
+text = "Move around"
+
+[node name="Label7" type="Label" parent="."]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 960.0
+offset_right = 398.0
+offset_bottom = 1274.0
+theme_override_fonts/font = ExtResource("1_bgoh4")
+theme_override_font_sizes/font_size = 50
+text = "Cancel building"
+
+[node name="Label6" type="Label" parent="."]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 702.75
+offset_right = 428.0
+offset_bottom = 1016.75
+theme_override_fonts/font = ExtResource("1_bgoh4")
+theme_override_font_sizes/font_size = 50
+text = "Pause Menu
+"
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 471.0
+offset_right = 431.0
+offset_bottom = 785.0
+theme_override_fonts/font = ExtResource("1_bgoh4")
+theme_override_font_sizes/font_size = 50
+text = "Zoom in/out
+"
+
+[node name="Image-removebg-preview(2)" type="Sprite2D" parent="."]
+position = Vector2(198.75, 163.125)
+scale = Vector2(1.26095, 1.12949)
+texture = ExtResource("2_8sbpr")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 350.0
+offset_right = 186.0
+offset_bottom = 461.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_uu3ww")
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 197.0
+offset_top = 350.0
+offset_right = 314.0
+offset_bottom = 461.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_12ap4")
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -147.0
+offset_top = 343.0
+offset_right = 184.0
+offset_bottom = 417.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 4
+theme_override_fonts/font = ExtResource("1_bgoh4")
+theme_override_font_sizes/font_size = 60
+text = "Rise Of Sedes"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -47.0
+offset_top = -92.0
+offset_right = 89.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sdio4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_om8gm")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_d3kd7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_5hu7o")
+text = "Exit
+"
+
+[node name="Label5" type="Label" parent="."]
+layout_mode = 0
+offset_left = 745.0
+offset_top = 82.0
+offset_right = 2906.0
+offset_bottom = 569.0
+theme_override_fonts/font = ExtResource("1_bgoh4")
+theme_override_font_sizes/font_size = 30
+text = "Every building has their own price.
+
+Place houses to generate money. Houses cause your food to drain, so be careful.
+Place barns to generate food. Barns cost you money.
+
+You must manage to not starve, but also manage to not go bankrupt. 
+The goal is to get as many points, which you do with the 3rd building, the town hall. They cost 
+alot, though. So be careful when you spend money on them!
+
+
+To place a building, select any of them and then press the hammer icon. 
+You should now be able to drag the building anywhere. Press left mouse to place the building 
+and it will start generating as soon as placed.
+You cannot remove or move them after placing."
+
+[node name="Image-removebg-preview(5)" type="Sprite2D" parent="."]
+position = Vector2(190, 628.75)
+scale = Vector2(0.301386, 0.290295)
+texture = ExtResource("6_lrgd5")
+
+[node name="Image-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(195, 881)
+scale = Vector2(0.366029, 0.325665)
+texture = ExtResource("7_oa6aj")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

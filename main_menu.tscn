@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3 uid="uid://bcubmty3u5fqn"]
+
+[ext_resource type="PackedScene" uid="uid://bcubmty3u5fqn" path="res://main_menu.tscn" id="1_53xhl"]
+[ext_resource type="Texture2D" uid="uid://dskc4y6gay87g" path="res://8749001f-7c02-40f1-881b-c036f9f770ed.jpg" id="2_3jd35"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xw0ad"]
+texture = ExtResource("2_3jd35")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a1mgl"]
+bg_color = Color(0, 0, 0, 0.615686)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 0.52549)
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uqge0"]
+bg_color = Color(0, 0, 0, 0.623529)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 0.360784)
+shadow_size = 5
+
+[node name="main_menu" instance=ExtResource("1_53xhl")]
+
+[node name="Control" type="Control" parent="." index="0"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="." index="1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_xw0ad")
+
+[node name="TextureRect" parent="." index="2"]
+offset_left = 844.0
+offset_top = -481.0
+offset_right = 1612.0
+offset_bottom = -49.0
+
+[node name="Start_button" parent="MarginContainer/HBoxContainer/VBoxContainer" index="1"]
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1mgl")
+
+[node name="exit_button" parent="MarginContainer/HBoxContainer/VBoxContainer" index="3"]
+theme_override_styles/normal = SubResource("StyleBoxFlat_uqge0")

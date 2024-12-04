@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3i4rrhgbb55e"]
+
+[ext_resource type="Texture2D" uid="uid://cjfi8mdxmus7t" path="res://Town_Hall_V3.png" id="1_cv5x4"]
+
+[node name="house_c" type="Sprite2D"]
+position = Vector2(221, 188.25)
+scale = Vector2(0.546875, 0.548828)
+texture = ExtResource("1_cv5x4")
